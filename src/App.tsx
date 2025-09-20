@@ -1,13 +1,19 @@
-import Header from "./Header";
+import Header from "./components/Header";
 import Card from "./Card";
-import Footer from "./Footer";
+import Footer from "./components/Footer";
+import Loop from "./components/Loop";
+import PropsPage from "./components/PropsPage";
+import UseState from "./components/UseState";
 
 function App() {
   return (
     <>
-      <Header />
+      {/* <Header />
       <Card />
-      <Footer />
+      <PropsPage />
+      <Loop />
+      <Footer /> */}
+      <UseState />
     </>
   );
 }
