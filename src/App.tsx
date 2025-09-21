@@ -4,16 +4,18 @@ import Footer from "./components/Footer";
 import Loop from "./components/Loop";
 import PropsPage from "./components/PropsPage";
 import UseState from "./components/UseState";
+import { Outlet } from "react-router-dom";
 
 function App() {
   return (
     <>
-      {/* <Header />
-      <Card />
+      <Header />
+      {/* <Card />
       <PropsPage />
-      <Loop />
-      <Footer /> */}
-      <UseState />
+      <Loop /> */}
+      <Outlet />
+      <Footer />
+      {/* <UseState /> */}
     </>
   );
 }

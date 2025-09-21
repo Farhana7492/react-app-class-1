@@ -1,11 +1,17 @@
 // import baselink from "./Config";
 // import Demo from "./Config";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+// import Header from "./Header";
+// import Footer from "./Footer";
 
 function UseState() {
     let [like ,setLike] = useState(0);
+    useEffect(()=>{
+      console.log("UseEffect Called");
+    },[like])
   return (
     <>
+    {/* <Header /> */}
     <div className="container text-center">
         
         <div>UseState</div>
@@ -17,6 +23,7 @@ function UseState() {
     <button onClick={() => setLike(like - 1)}>💔</button>
     }
     </div>
+    {/* <Footer /> */}
     </>
   )
 }   
